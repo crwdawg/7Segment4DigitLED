@@ -99,7 +99,7 @@ class fourDigitLED:
 
     def display(self,number,displayTime=2):                                               #this is the function to call for output
         self.number = number
-        self.displayTime = displayTime
+        self.displayTime = int(displayTime)
         self._initialize()
         self._holdIt()
 
